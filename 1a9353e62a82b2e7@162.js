@@ -1,7 +1,7 @@
 // https://observablehq.com/d/1a9353e62a82b2e7@162
 export default function define(runtime, observer) {
   const main = runtime.module();
-  const fileAttachments = new Map([["draft@1.json",new URL("./files/0d178da975d5f2efe4154989eab19895365332b36241c97602a2d141f1bad3ad7ff2c6efe781c95cb21832c6c5cae2263c22fde587adef66b4ed63806c7e3ee0",import.meta.url)]]);
+  const fileAttachments = new Map([["draft@1.json",new URL("https://raw.github.com/KENG85/treemap/master/files/0d178da975d5f2efe4154989eab19895365332b36241c97602a2d141f1bad3ad7ff2c6efe781c95cb21832c6c5cae2263c22fde587adef66b4ed63806c7e3ee0",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer("viewof tile")).define("viewof tile", ["d3","html"], function(d3,html)
 {
